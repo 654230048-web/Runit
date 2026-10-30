@@ -1,0 +1,113 @@
+/* ============================================================
+   IT RUNNER — Dark & Gold/Yellow Theme Stylesheet
+   ============================================================ */
+:root {
+    --bg-dark: #121212;
+    --card-bg: #1e1e1e;
+    --card-border: #333333;
+    --primary-yellow: #ffcc00;
+    --hover-yellow: #e6b800;
+    --text-light: #f5f5f5;
+    --text-muted: #b0b0b0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Sarabun', 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    background-color: #000000 !important;
+    border-bottom: 2px solid var(--primary-yellow);
+}
+
+.navbar-brand {
+    color: var(--primary-yellow) !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-yellow) !important;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    border-bottom: 3px solid var(--primary-yellow);
+    padding: 60px 0;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    color: var(--text-light);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(255, 204, 0, 0.15);
+    border-color: var(--primary-yellow);
+}
+
+.btn-yellow {
+    background-color: var(--primary-yellow);
+    color: #000000;
+    font-weight: 700;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-yellow:hover {
+    background-color: var(--hover-yellow);
+    color: #000000;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+}
+
+.btn-outline-yellow {
+    border: 2px solid var(--primary-yellow);
+    color: var(--primary-yellow);
+    font-weight: 600;
+}
+
+.btn-outline-yellow:hover {
+    background-color: var(--primary-yellow);
+    color: #000000;
+}
+
+.text-yellow {
+    color: var(--primary-yellow) !important;
+}
+
+.badge-yellow {
+    background-color: var(--primary-yellow);
+    color: #000000;
+    font-weight: 700;
+}
+
+.form-control, .form-select {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #2a2a2a;
+    border-color: var(--primary-yellow);
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(255, 204, 0, 0.25);
+}
+
+footer {
+    background-color: #080808;
+    border-top: 1px solid #222;
+    color: var(--text-muted);
+}
